@@ -37,7 +37,7 @@ let rec find_successor node id =
   else
     let n' = closest_preceding_finger node id in
     if n'.id = node.id then
-      node.successor
+      nodegit .successor
     else
       find_successor n' id
 
